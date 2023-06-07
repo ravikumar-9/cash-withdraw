@@ -1,0 +1,10 @@
+/* Write your CSS here */
+.buttons {
+  height: 34px;
+  width: 120px;
+  background-color: #585076;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #d4d2db;
+  margin: 10px;
+}
