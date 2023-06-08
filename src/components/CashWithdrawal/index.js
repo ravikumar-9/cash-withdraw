@@ -6,18 +6,17 @@ import DenominationItem from '../DenominationItem'
 import './index.css'
 
 class CashWithdrawal extends Component {
-  state = {amount: 2001}
+  state = {amount: 2000}
 
   decreased = id => {
     const {denominationsList} = this.props
 
-    const filtered = denominationsList.filter(eachDemon => id === eachDemon.id)
+    const filtered = denominationsList.filter(eachDemon => id !== eachDemon.id)
     console.log(filtered[0].value)
 
-    const {value} = filtered[0]
-    console.log(value)
+    const {value} = filtered[0].value
 
-    this.setState(prevState => ({amount: prevState.amount + {value}}))
+    this.setState(prevState => ({amount: prevState.amount - value}))
   }
 
   render() {

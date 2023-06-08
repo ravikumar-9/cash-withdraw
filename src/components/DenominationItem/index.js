@@ -7,7 +7,7 @@ const CashWithDrawal = props => {
   const {value, id} = demonDetails
 
   const onDecrease = () => {
-    decreased(id)
+    decreased(id, value)
   }
 
   return (
